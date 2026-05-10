@@ -99,23 +99,94 @@ $(function(){initNavTree('structname__node__pool__t.html','',''); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a08b822983824cb3de59f6497dea42c8b" id="r_a08b822983824cb3de59f6497dea42c8b"><td class="memItemLeft"><a id="a08b822983824cb3de59f6497dea42c8b" name="a08b822983824cb3de59f6497dea42c8b"></a>
-<a class="el" href="structname__node__pool__t.html">name_node_pool_t</a> *&#160;</td><td class="memItemRight"><b>prev</b></td></tr>
-<tr class="memdesc:a08b822983824cb3de59f6497dea42c8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to the previous block of names. <br /></td></tr>
-<tr class="memitem:a6e23407dbb571296a01217b3412627a4" id="r_a6e23407dbb571296a01217b3412627a4"><td class="memItemLeft"><a id="a6e23407dbb571296a01217b3412627a4" name="a6e23407dbb571296a01217b3412627a4"></a>
-<a class="el" href="structname__node__pool__t.html">name_node_pool_t</a> *&#160;</td><td class="memItemRight"><b>next</b></td></tr>
-<tr class="memdesc:a6e23407dbb571296a01217b3412627a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to the next block of names. <br /></td></tr>
-<tr class="memitem:a5f3dd95e29ae048095435184a00d01e3" id="r_a5f3dd95e29ae048095435184a00d01e3"><td class="memItemLeft"><a id="a5f3dd95e29ae048095435184a00d01e3" name="a5f3dd95e29ae048095435184a00d01e3"></a>
-int&#160;</td><td class="memItemRight"><b>num_images</b></td></tr>
-<tr class="memdesc:a5f3dd95e29ae048095435184a00d01e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of images occupied in the block. 32 bit integer for word alignment purposes. <br /></td></tr>
-<tr class="memitem:a726fc38bef640fcf694e444aa0440cbe" id="r_a726fc38bef640fcf694e444aa0440cbe"><td class="memItemLeft"><a id="a726fc38bef640fcf694e444aa0440cbe" name="a726fc38bef640fcf694e444aa0440cbe"></a>
-char&#160;</td><td class="memItemRight"><b>name</b> [<a class="el" href="main_8c.html#a27f57cb1bfd33adac58ff5186e87c093">POOL_IMG_SIZE</a>][<a class="el" href="main_8c.html#a220f38b26fa99d4d91b574f42d991516">MAX_STRING_SIZE</a>]</td></tr>
-<tr class="memdesc:a726fc38bef640fcf694e444aa0440cbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of names in a block. <br /></td></tr>
+<tr class="memitem:a08b822983824cb3de59f6497dea42c8b" id="r_a08b822983824cb3de59f6497dea42c8b"><td class="memItemLeft"><a class="el" href="structname__node__pool__t.html">name_node_pool_t</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a08b822983824cb3de59f6497dea42c8b">prev</a></td></tr>
+<tr class="memdesc:a08b822983824cb3de59f6497dea42c8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to the previous block of names.  <br /></td></tr>
+<tr class="memitem:a6e23407dbb571296a01217b3412627a4" id="r_a6e23407dbb571296a01217b3412627a4"><td class="memItemLeft"><a class="el" href="structname__node__pool__t.html">name_node_pool_t</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a6e23407dbb571296a01217b3412627a4">next</a></td></tr>
+<tr class="memdesc:a6e23407dbb571296a01217b3412627a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to the next block of names.  <br /></td></tr>
+<tr class="memitem:a5f3dd95e29ae048095435184a00d01e3" id="r_a5f3dd95e29ae048095435184a00d01e3"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a5f3dd95e29ae048095435184a00d01e3">num_images</a></td></tr>
+<tr class="memdesc:a5f3dd95e29ae048095435184a00d01e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of images occupied in the block. 32 bit integer for word alignment purposes.  <br /></td></tr>
+<tr class="memitem:a726fc38bef640fcf694e444aa0440cbe" id="r_a726fc38bef640fcf694e444aa0440cbe"><td class="memItemLeft">char&#160;</td><td class="memItemRight"><a class="el" href="#a726fc38bef640fcf694e444aa0440cbe">name</a> [<a class="el" href="main_8c.html#a27f57cb1bfd33adac58ff5186e87c093">POOL_IMG_SIZE</a>][<a class="el" href="main_8c.html#a220f38b26fa99d4d91b574f42d991516">MAX_STRING_SIZE</a>]</td></tr>
+<tr class="memdesc:a726fc38bef640fcf694e444aa0440cbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of names in a block.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A container for holding a bunch of names. </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
-<li>src/<a class="el" href="main_8c.html">main.c</a></li>
+
+<p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00071">71</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
+</div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
+<a id="a726fc38bef640fcf694e444aa0440cbe" name="a726fc38bef640fcf694e444aa0440cbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a726fc38bef640fcf694e444aa0440cbe">&#9670;&#160;</a></span>name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char name_node_pool_t::name[<a class="el" href="main_8c.html#a27f57cb1bfd33adac58ff5186e87c093">POOL_IMG_SIZE</a>][<a class="el" href="main_8c.html#a220f38b26fa99d4d91b574f42d991516">MAX_STRING_SIZE</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A list of names in a block. </p>
+
+<p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00083">83</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+<a id="a6e23407dbb571296a01217b3412627a4" name="a6e23407dbb571296a01217b3412627a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e23407dbb571296a01217b3412627a4">&#9670;&#160;</a></span>next</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structname__node__pool__t.html">name_node_pool_t</a>* name_node_pool_t::next</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A pointer to the next block of names. </p>
+
+<p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00077">77</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+<a id="a5f3dd95e29ae048095435184a00d01e3" name="a5f3dd95e29ae048095435184a00d01e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f3dd95e29ae048095435184a00d01e3">&#9670;&#160;</a></span>num_images</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int name_node_pool_t::num_images</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Number of images occupied in the block. 32 bit integer for word alignment purposes. </p>
+
+<p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00080">80</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+<a id="a08b822983824cb3de59f6497dea42c8b" name="a08b822983824cb3de59f6497dea42c8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08b822983824cb3de59f6497dea42c8b">&#9670;&#160;</a></span>prev</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structname__node__pool__t.html">name_node_pool_t</a>* name_node_pool_t::prev</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A pointer to the previous block of names. </p>
+
+<p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00074">74</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>src/<a class="el" href="main_8c_source.html">main.c</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

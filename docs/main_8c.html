@@ -101,7 +101,9 @@ $(function(){initNavTree('main_8c.html','',''); });
 <code>#include &lt;libdragon.h&gt;</code><br />
 <code>#include &quot;config.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="qoi__viewer_8h_source.html">qoi_viewer.h</a>&quot;</code><br />
-</div><table class="memberdecls">
+</div>
+<p><a href="main_8c_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:name_5Fnode_5Fpool_5Ft" id="r_name_5Fnode_5Fpool_5Ft"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structname__node__pool__t.html">name_node_pool_t</a></td></tr>
@@ -109,18 +111,15 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a27f57cb1bfd33adac58ff5186e87c093" id="r_a27f57cb1bfd33adac58ff5186e87c093"><td class="memItemLeft"><a id="a27f57cb1bfd33adac58ff5186e87c093" name="a27f57cb1bfd33adac58ff5186e87c093"></a>
-#define&#160;</td><td class="memItemRight"><b>POOL_IMG_SIZE</b>&#160;&#160;&#160;15</td></tr>
-<tr class="memdesc:a27f57cb1bfd33adac58ff5186e87c093"><td class="mdescLeft">&#160;</td><td class="mdescRight">How many names can fit in a block. <br /></td></tr>
-<tr class="memitem:a220f38b26fa99d4d91b574f42d991516" id="r_a220f38b26fa99d4d91b574f42d991516"><td class="memItemLeft"><a id="a220f38b26fa99d4d91b574f42d991516" name="a220f38b26fa99d4d91b574f42d991516"></a>
-#define&#160;</td><td class="memItemRight"><b>MAX_STRING_SIZE</b>&#160;&#160;&#160;MAX_FILENAME_LEN + 1</td></tr>
-<tr class="memdesc:a220f38b26fa99d4d91b574f42d991516"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum length of a string. File names are limited by libdragon to 243 characters. <br /></td></tr>
+<tr class="memitem:a27f57cb1bfd33adac58ff5186e87c093" id="r_a27f57cb1bfd33adac58ff5186e87c093"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a27f57cb1bfd33adac58ff5186e87c093">POOL_IMG_SIZE</a>&#160;&#160;&#160;15</td></tr>
+<tr class="memdesc:a27f57cb1bfd33adac58ff5186e87c093"><td class="mdescLeft">&#160;</td><td class="mdescRight">How many names can fit in a block.  <br /></td></tr>
+<tr class="memitem:a220f38b26fa99d4d91b574f42d991516" id="r_a220f38b26fa99d4d91b574f42d991516"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a220f38b26fa99d4d91b574f42d991516">MAX_STRING_SIZE</a>&#160;&#160;&#160;MAX_FILENAME_LEN + 1</td></tr>
+<tr class="memdesc:a220f38b26fa99d4d91b574f42d991516"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum length of a string. File names are limited by libdragon to 243 characters.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a47a00c1f290928b2f18021e5f380cb29" id="r_a47a00c1f290928b2f18021e5f380cb29"><td class="memItemLeft"><a id="a47a00c1f290928b2f18021e5f380cb29" name="a47a00c1f290928b2f18021e5f380cb29"></a>
-typedef struct name_node_pool_t&#160;</td><td class="memItemRight"><b>name_node_pool_t</b></td></tr>
-<tr class="memdesc:a47a00c1f290928b2f18021e5f380cb29"><td class="mdescLeft">&#160;</td><td class="mdescRight">A container for holding a bunch of names. <br /></td></tr>
+<tr class="memitem:a47a00c1f290928b2f18021e5f380cb29" id="r_a47a00c1f290928b2f18021e5f380cb29"><td class="memItemLeft">typedef struct name_node_pool_t&#160;</td><td class="memItemRight"><a class="el" href="#a47a00c1f290928b2f18021e5f380cb29">name_node_pool_t</a></td></tr>
+<tr class="memdesc:a47a00c1f290928b2f18021e5f380cb29"><td class="mdescLeft">&#160;</td><td class="mdescRight">A container for holding a bunch of names.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -128,27 +127,81 @@ Functions</h2></td></tr>
 <tr class="memdesc:ab9f7e04bbdd497fc3190e913d0c64b67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Poll controller and get input from a specific port.  <br /></td></tr>
 <tr class="memitem:a570238657db903b42ff5a10345574d7d" id="r_a570238657db903b42ff5a10345574d7d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a570238657db903b42ff5a10345574d7d">readNames</a> (<a class="el" href="structname__node__pool__t.html">name_node_pool_t</a> *start_node)</td></tr>
 <tr class="memdesc:a570238657db903b42ff5a10345574d7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the names of QOI images from ROM.  <br /></td></tr>
-<tr class="memitem:a6d6076969f544a77c57a6b3fe6e7b197" id="r_a6d6076969f544a77c57a6b3fe6e7b197"><td class="memItemLeft"><a id="a6d6076969f544a77c57a6b3fe6e7b197" name="a6d6076969f544a77c57a6b3fe6e7b197"></a>
-void&#160;</td><td class="memItemRight"><b>start_viewer</b> ()</td></tr>
-<tr class="memdesc:a6d6076969f544a77c57a6b3fe6e7b197"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function starts QOI viewer to display first QOI image decoded. <br /></td></tr>
+<tr class="memitem:a6d6076969f544a77c57a6b3fe6e7b197" id="r_a6d6076969f544a77c57a6b3fe6e7b197"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6d6076969f544a77c57a6b3fe6e7b197">start_viewer</a> ()</td></tr>
+<tr class="memdesc:a6d6076969f544a77c57a6b3fe6e7b197"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function starts QOI viewer to display first QOI image decoded.  <br /></td></tr>
 <tr class="memitem:a9be0b2a964508d1ec5636f04bc095ce1" id="r_a9be0b2a964508d1ec5636f04bc095ce1"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9be0b2a964508d1ec5636f04bc095ce1">printFirstDecodedValues</a> (<a class="el" href="qoi__viewer_8h.html#af665b5bf330172f0f1d548e0a6fbca76">qoi_img_info_t</a> *info)</td></tr>
 <tr class="memdesc:a9be0b2a964508d1ec5636f04bc095ce1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the first values of the pixel decoded by the QOI Decoder.  <br /></td></tr>
-<tr class="memitem:a840291bc02cba5474a4cb46a9b9566fe" id="r_a840291bc02cba5474a4cb46a9b9566fe"><td class="memItemLeft"><a id="a840291bc02cba5474a4cb46a9b9566fe" name="a840291bc02cba5474a4cb46a9b9566fe"></a>
-int&#160;</td><td class="memItemRight"><b>main</b> (void)</td></tr>
-<tr class="memdesc:a840291bc02cba5474a4cb46a9b9566fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is the entry point for QOI Viewer. <br /></td></tr>
+<tr class="memitem:a840291bc02cba5474a4cb46a9b9566fe" id="r_a840291bc02cba5474a4cb46a9b9566fe"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a840291bc02cba5474a4cb46a9b9566fe">main</a> (void)</td></tr>
+<tr class="memdesc:a840291bc02cba5474a4cb46a9b9566fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is the entry point for QOI Viewer.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:abcd3aaf24d360ff1478cfa5f3bd16dd0" id="r_abcd3aaf24d360ff1478cfa5f3bd16dd0"><td class="memItemLeft"><a id="abcd3aaf24d360ff1478cfa5f3bd16dd0" name="abcd3aaf24d360ff1478cfa5f3bd16dd0"></a>
-uint8_t&#160;</td><td class="memItemRight"><b>buffer0</b> [<a class="el" href="qoi__viewer_8h.html#af95d0d3fb6f9a4c1f198a1bbc520a6ad">IMG_BUFFER_SIZE</a>]</td></tr>
-<tr class="memdesc:abcd3aaf24d360ff1478cfa5f3bd16dd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raw image buffer that decoded from qoi image file. <br /></td></tr>
-<tr class="memitem:a71e76fb2289b3a7546a9d89fbe48cd41" id="r_a71e76fb2289b3a7546a9d89fbe48cd41"><td class="memItemLeft"><a id="a71e76fb2289b3a7546a9d89fbe48cd41" name="a71e76fb2289b3a7546a9d89fbe48cd41"></a>
-uint8_t&#160;</td><td class="memItemRight"><b>buffer1</b> [<a class="el" href="qoi__viewer_8h.html#af95d0d3fb6f9a4c1f198a1bbc520a6ad">IMG_BUFFER_SIZE</a>]</td></tr>
-<tr class="memdesc:a71e76fb2289b3a7546a9d89fbe48cd41"><td class="mdescLeft">&#160;</td><td class="mdescRight">second raw image buffer that decoded from qoi image file <br /></td></tr>
+<tr class="memitem:abcd3aaf24d360ff1478cfa5f3bd16dd0" id="r_abcd3aaf24d360ff1478cfa5f3bd16dd0"><td class="memItemLeft">uint8_t&#160;</td><td class="memItemRight"><a class="el" href="#abcd3aaf24d360ff1478cfa5f3bd16dd0">buffer0</a> [<a class="el" href="qoi__viewer_8h.html#af95d0d3fb6f9a4c1f198a1bbc520a6ad">IMG_BUFFER_SIZE</a>]</td></tr>
+<tr class="memdesc:abcd3aaf24d360ff1478cfa5f3bd16dd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raw image buffer that decoded from qoi image file.  <br /></td></tr>
+<tr class="memitem:a71e76fb2289b3a7546a9d89fbe48cd41" id="r_a71e76fb2289b3a7546a9d89fbe48cd41"><td class="memItemLeft">uint8_t&#160;</td><td class="memItemRight"><a class="el" href="#a71e76fb2289b3a7546a9d89fbe48cd41">buffer1</a> [<a class="el" href="qoi__viewer_8h.html#af95d0d3fb6f9a4c1f198a1bbc520a6ad">IMG_BUFFER_SIZE</a>]</td></tr>
+<tr class="memdesc:a71e76fb2289b3a7546a9d89fbe48cd41"><td class="mdescLeft">&#160;</td><td class="mdescRight">second raw image buffer that decoded from qoi image file  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file is the entry point of the N64 QOI Viewer ROM. </p>
-</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
+
+<p class="definition">Definition in file <a class="el" href="main_8c_source.html">main.c</a>.</p>
+</div><a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
+<a id="a220f38b26fa99d4d91b574f42d991516" name="a220f38b26fa99d4d91b574f42d991516"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a220f38b26fa99d4d91b574f42d991516">&#9670;&#160;</a></span>MAX_STRING_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_STRING_SIZE&#160;&#160;&#160;MAX_FILENAME_LEN + 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Maximum length of a string. File names are limited by libdragon to 243 characters. </p>
+
+<p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00051">51</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+<a id="a27f57cb1bfd33adac58ff5186e87c093" name="a27f57cb1bfd33adac58ff5186e87c093"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27f57cb1bfd33adac58ff5186e87c093">&#9670;&#160;</a></span>POOL_IMG_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define POOL_IMG_SIZE&#160;&#160;&#160;15</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>How many names can fit in a block. </p>
+
+<p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00048">48</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Typedef Documentation</h2>
+<a id="a47a00c1f290928b2f18021e5f380cb29" name="a47a00c1f290928b2f18021e5f380cb29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47a00c1f290928b2f18021e5f380cb29">&#9670;&#160;</a></span>name_node_pool_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct name_node_pool_t name_node_pool_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A container for holding a bunch of names. </p>
+
+<p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00068">68</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
 <a id="ab9f7e04bbdd497fc3190e913d0c64b67" name="ab9f7e04bbdd497fc3190e913d0c64b67"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab9f7e04bbdd497fc3190e913d0c64b67">&#9670;&#160;</a></span>joypad_poll_port()</h2>
 
@@ -181,6 +234,29 @@ uint8_t&#160;</td><td class="memItemRight"><b>buffer1</b> [<a class="el" href="q
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>input to a specified port </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00062">62</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+<a id="a840291bc02cba5474a4cb46a9b9566fe" name="a840291bc02cba5474a4cb46a9b9566fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a840291bc02cba5474a4cb46a9b9566fe">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function is the entry point for QOI Viewer. </p>
+
+<p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00180">180</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
+
 </div>
 </div>
 <a id="a9be0b2a964508d1ec5636f04bc095ce1" name="a9be0b2a964508d1ec5636f04bc095ce1"></a>
@@ -206,6 +282,8 @@ uint8_t&#160;</td><td class="memItemRight"><b>buffer1</b> [<a class="el" href="q
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00156">156</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
+
 </div>
 </div>
 <a id="a570238657db903b42ff5a10345574d7d" name="a570238657db903b42ff5a10345574d7d"></a>
@@ -230,6 +308,66 @@ uint8_t&#160;</td><td class="memItemRight"><b>buffer1</b> [<a class="el" href="q
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00088">88</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+<a id="a6d6076969f544a77c57a6b3fe6e7b197" name="a6d6076969f544a77c57a6b3fe6e7b197"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d6076969f544a77c57a6b3fe6e7b197">&#9670;&#160;</a></span>start_viewer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void start_viewer </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function starts QOI viewer to display first QOI image decoded. </p>
+
+<p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00138">138</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variable Documentation</h2>
+<a id="abcd3aaf24d360ff1478cfa5f3bd16dd0" name="abcd3aaf24d360ff1478cfa5f3bd16dd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcd3aaf24d360ff1478cfa5f3bd16dd0">&#9670;&#160;</a></span>buffer0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t buffer0[<a class="el" href="qoi__viewer_8h.html#af95d0d3fb6f9a4c1f198a1bbc520a6ad">IMG_BUFFER_SIZE</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Raw image buffer that decoded from qoi image file. </p>
+
+<p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00054">54</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
+<a id="a71e76fb2289b3a7546a9d89fbe48cd41" name="a71e76fb2289b3a7546a9d89fbe48cd41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71e76fb2289b3a7546a9d89fbe48cd41">&#9670;&#160;</a></span>buffer1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t buffer1[<a class="el" href="qoi__viewer_8h.html#af95d0d3fb6f9a4c1f198a1bbc520a6ad">IMG_BUFFER_SIZE</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>second raw image buffer that decoded from qoi image file </p>
+
+<p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00057">57</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
 
 </div>
 </div>
